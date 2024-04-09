@@ -8,7 +8,8 @@ import { useRouter } from "next/router";
 
 export default function SignupFormDemo() {
   const router = useRouter();
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     router.push("/");
   };
@@ -48,7 +49,7 @@ export default function SignupFormDemo() {
             Create an account
           </p>
 
-          <form className="my-8" onSubmit={handleSubmit}>
+          <form className="my-8">
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
                 <Label htmlFor="firstname">First name</Label>
