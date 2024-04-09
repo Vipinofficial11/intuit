@@ -1,5 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+interface Price {
+  actual: string;
+  discount: string;
+}
 
 function PriceCard({
   cards,
@@ -7,7 +11,7 @@ function PriceCard({
   cards: {
     title: string;
     description: string;
-    price: Object;
+    price: Price;
     pointers: string[];
   }[];
 }) {
@@ -28,11 +32,11 @@ function PriceCard({
             <span className="font-serif text-xl text-zinc-100 ">Starts at</span>
             <br />
             <span className="text-zinc-400 text-sm underline underline-offset-[-5px]">
-              ₹{item.price?.actual}
+              ₹{item.price.actual}
             </span>
             <br />
             <span className="text-zinc-100 text-xl font-bold font-sans">
-              ₹{item.price?.discount}
+              ₹{item.price.discount}
             </span>
             <br />
             <span className="text-sm">/month for 12 months*</span>

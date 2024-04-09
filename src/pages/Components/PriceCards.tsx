@@ -1,6 +1,5 @@
 import React from "react";
 import PriceCard from "./PriceCard";
-import { motion } from "framer-motion";
 
 function PriceCards() {
   return (
