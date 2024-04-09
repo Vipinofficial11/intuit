@@ -1,4 +1,4 @@
-import Cards from "./Cards.tsx";
+import Cards from "./Cards";
 import { motion } from "framer-motion";
 
 function Details() {
