@@ -12,7 +12,7 @@ function Navbar({ signup }: { signup: boolean }) {
   useEffect(() => {
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({
-        behaviour: "smooth",
+        behavior: "smooth",
         block: "start",
       });
     }
