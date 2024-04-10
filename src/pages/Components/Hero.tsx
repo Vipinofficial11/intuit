@@ -1,11 +1,11 @@
 import React from "react";
-import { cn } from "../utils/cn";
-import { Spotlight } from "./Spotlight";
+import cn from "../utils/cn";
+import Spotlight from "./Spotlight";
 import Navbar from "./Navbar";
 import Details from "./Details";
-import { LayoutGrids } from "./ImageLayout";
+import LayoutGrids from "./ImageLayout";
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="w-full bg-black/[0.96] antialiased bg-grid-white/[0.02] overflow-hidden">
       <Spotlight

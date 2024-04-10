@@ -17,7 +17,7 @@ function PriceCard({
 }) {
   return (
     <div className="flex flex-row gap-4 mt-20 justify-center flex-wrap w-full h-full">
-      {cards.map((item, idx) => (
+      {cards?.map((item, idx) => (
         <div
           key={idx}
           className="rounded-2xl text-white w-[350px] h-[750px] p-4 overflow-hidden bg-black border-2 border-white/80 relative hover:translate-y-2 hover:shadow-[8px_6px_15px_1px_rgba(247,247,247,0.65)]"

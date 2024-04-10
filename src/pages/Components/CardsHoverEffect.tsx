@@ -1,9 +1,9 @@
-import { cn } from "../utils/cn";
+import cn from "../utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-export const HoverEffect = ({
+export default function HoverEffect ({
   items,
   className,
 }: {
@@ -13,7 +13,7 @@ export const HoverEffect = ({
     link: string;
   }[];
   className?: string;
-}) => {
+}) {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -23,7 +23,7 @@ export const HoverEffect = ({
         className
       )}
     >
-      {items.map((item, idx) => (
+      {items?.map((item, idx) => (
         <motion.div
           key={idx}
           className="relative group block p-2 h-full w-full"

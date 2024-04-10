@@ -1,4 +1,4 @@
-import { HoverEffect } from "./CardsHoverEffect";
+import HoverEffect from "./CardsHoverEffect";
 
 export default function Cards() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "../utils/cn";
+import cn from "../utils/cn";
 import Navbar from "./Navbar";
 
 type SpotlightProps = {
@@ -7,7 +7,7 @@ type SpotlightProps = {
   fill?: string;
 };
 
-export const Spotlight = ({ className, fill }: SpotlightProps) => {
+const Spotlight = ({ className, fill }: SpotlightProps) => {
   return (
     <svg
       className={cn(
@@ -55,3 +55,5 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
     </svg>
   );
 };
+
+export default Spotlight;

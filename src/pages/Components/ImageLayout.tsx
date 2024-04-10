@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { LayoutGrid } from "./LayoutGrid";
+import LayoutGrid from "./LayoutGrid";
 import { motion } from "framer-motion";
 
-export function LayoutGrids() {
+export default function LayoutGrids() {
   return (
     <div className="h-screen py-20 w-full relative bg-black" id="resources">
       <motion.h2

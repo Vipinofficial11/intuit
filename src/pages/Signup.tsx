@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Label } from "./Components/Labels";
-import { Input } from "./Components/Input";
-import { cn } from "./utils/cn";
+import Label from "./Components/Labels";
+import Input from "./Components/Input";
+import cn from "./utils/cn";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -98,7 +98,7 @@ const BottomGradient = () => {
     </>
   );
 };
-
+ 
 const LabelInputContainer = ({
   children,
   className,

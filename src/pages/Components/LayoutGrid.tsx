@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { cn } from "../utils/cn";
+import cn from "../utils/cn";
 import Image from "next/image";
 
 type Card = {
@@ -11,7 +11,7 @@ type Card = {
   thumbnail: string;
 };
 
-export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
+const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
@@ -36,7 +36,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
         ease: "easeInOut",
       }}
     >
-      {cards.map((card, i) => (
+      {cards?.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
@@ -74,6 +74,8 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     </motion.div>
   );
 };
+
+export default LayoutGrid;
 
 const BlurImage = ({ card }: { card: Card }) => {
   const [loaded, setLoaded] = useState(false);
