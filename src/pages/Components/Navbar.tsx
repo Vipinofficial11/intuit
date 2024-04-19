@@ -6,7 +6,7 @@ function Navbar({ signup }: { signup: boolean }) {
   const [id, setId] = useState<String>();
   const sectionRef = useRef<HTMLDivElement>(null);
   const handleOnClick = () => {
-    router.push("/Signup");
+    router.push("/");
   };
 
   useEffect(() => {

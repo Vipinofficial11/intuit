@@ -20,7 +20,7 @@ function PriceCard({
       {cards?.map((item, idx) => (
         <div
           key={idx}
-          className="rounded-2xl text-white w-[350px] h-[750px] p-4 overflow-hidden bg-black border-2 border-white/80 relative hover:translate-y-2 hover:shadow-[8px_6px_15px_1px_rgba(247,247,247,0.65)]"
+          className="rounded-2xl text-white w-[350px] h-[750px] p-4 overflow-hidden bg-black border-2 border-white/80 relative hover:scale-105 hover:shadow-[8px_6px_15px_1px_rgba(247,247,247,0.25)]"
         >
           <h1 className="text-zinc-100 text-2xl font-bold tracking-wide mt-4 font-serif">
             {item.title}
